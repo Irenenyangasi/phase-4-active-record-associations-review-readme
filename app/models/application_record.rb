@@ -1,3 +1,5 @@
-class ApplicationRecord < ActiveRecord::Base
-  self.abstract_class = true
+class Author < ApplicationRecord
+  has_many :posts
+  has_one :profile
 end
+Footer
